@@ -69,7 +69,9 @@ The following image presents result of grouping Mozilla software: software are g
 
 .. topic:: Example for Windows updates grouping, very unclear!
 
-   Autre exemple pour regrouper les mises à jour Windows. Cette fois le critères sont des OU et non des ET *Critères* Logiciel expression rationnelle vérifie /Correctif.\*XP.\*KB([0-9]\*)/ Logicel expression rationnelle vérifie /Mise.\*XP.\*KB([0-9]\*)/ Logiciel expression rationnelle vérifie /Update.\*XP.\*KB([0-9]\*)/ *Actions* Logiciel assigner Mise à jour Windows Version assigner valeur depuis regex #0
+   Another example for regrouping the Windows updates. In this case, the criteria are accumulated with OR instead of AND 
+   *Criterion* Software regular expression matches `/KB([0-9]\*)/`
+   *Actions* Software assign `Windows Update` Version Assign the value from regular expression `#0``
 
 
 Manufacturer
